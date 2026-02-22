@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/14097a442a.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <span class="navbar-brand text-white fw-bold">
+                🍽 Recipe App
+            </span>
+
+            <a href="favorite.html" class="nav-link text-warning">
+                <i class="fa-solid fa-heart"></i> Favorites
+            </a>
+        </div>
+    </nav>
+
+    <!-- SEARCH -->
+    <div class="container text-center mt-5">
+        <input type="text" id="search" class="searchbox" placeholder="Search for meals...">
+        <button class="searchbutton" onclick="showMealList()">
+            <i class="fa fa-search"></i>
+        </button>
+    </div>
+
+    <!-- HEADING -->
+    <div class="text-center mt-4">
+        <h1 id="heading2">Search Your Favorite Meal</h1>
+    </div>
+
+    <!-- RECIPE LIST -->
+    <div id="recipe-list" class="container d-flex flex-wrap justify-content-center mt-5"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
